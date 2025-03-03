@@ -1,0 +1,191 @@
+.offers {
+    width: 70%;
+    height: 65vh;
+    /* Increased height for better spacing */
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 20px 100px;
+    /* Added padding for more spacing */
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fce4ff 0%, #ffe1ef 60%);
+    /* Softer gradient for better contrast */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    /* Added space between text and image */
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 65px;
+    /* Adjusted size for better readability */
+    font-weight: 700;
+    /* Slightly bolder text */
+    margin: 0;
+    /* Removed default margin for cleaner spacing */
+}
+
+.offers-left p {
+    color: #383838;
+    /* Softer black for better readability */
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.offers-left button {
+    width: 280px;
+    height: 65px;
+    border-radius: 35px;
+    background: #ff5757;
+    /* Slightly brighter red */
+    border: 2px solid #ff7373;
+    /* Added border for distinction */
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.offers-left button:hover {
+    background: #ff7373;
+    transform: scale(1.05);
+    /* Interactive hover effect */
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px;
+    /* Adjusted for better vertical alignment */
+}
+
+.offers-right img {
+    width: 60%;
+    /* Scaled down the image for better balance */
+    object-fit: contain;
+    /* Ensures image is proportionally scaled */
+}
+
+@media(max-width:1280px) {
+    .offers {
+        padding: 0px 80px;
+        margin-bottom: 120px;
+    }
+
+    .offers-left h1 {
+        font-size: 40px;
+    }
+
+    .offers-left p {
+        font-size: 18px;
+    }
+
+    .offers-right img {
+        width: 300px;
+    }
+
+    .offers-left button {
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .offers-right {
+        padding-top: 30px;
+    }
+}
+
+@media(max-width:1024px) {
+    .offers {
+        padding: 0px 60px;
+        margin-bottom: 80px;
+        height: 40vh;
+    }
+
+    .offers-left h1 {
+        font-size: 30px;
+    }
+
+    .offers-left p {
+        font-size: 16px;
+    }
+
+    .offers-right img {
+        width: 200px;
+    }
+
+    .offers-left button {
+        width: 160px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .offers-right {
+        padding-top: 10px;
+    }
+}
+
+@media(max-width:800px) {
+    .offers {
+        margin-bottom: 60px;
+    }
+
+    .offers-left h1 {
+        font-size: 22px;
+    }
+
+    .offers-left p {
+        font-size: 13px;
+    }
+
+    .offers-right img {
+        width: 180px;
+    }
+
+    .offers-left button {
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:500px) {
+    .offers {
+        height: 25vh;
+        margin-bottom: 50px;
+    }
+
+    .offers-left h1 {
+        font-size: 16px;
+    }
+
+    .offers-left p {
+        font-size: 10px;
+    }
+
+    .offers-right img {
+        width: 120px;
+    }
+
+    .offers-left button {
+        width: 120px;
+        height: 25px;
+        font-size: 10px;
+        margin-top: 12px;
+    }
+}
